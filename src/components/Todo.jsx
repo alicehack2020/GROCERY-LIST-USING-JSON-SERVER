@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import GroceryInput from './GroceryInput'
-import GroceryList from './GroceryList'
+import TodoInput from './TodoInput'
+import TodoList from './TodoList'
 import { v4 as uuidv4 } from 'uuid';
-const Grocery = () => {
+const Todo = () => {
    const [data,setData]=useState([])
 
 
@@ -47,10 +47,10 @@ const Grocery = () => {
 
   return (
     <div>
-        <GroceryInput addTodo={addTodo}/>
-        <GroceryList data={data} deleData={deleData}/>
+        <TodoInput addTodo={addTodo}/>
+        <TodoList data={data} deleData={deleData}/>
     </div>
   )
 }
 
-export default Grocery
+export default Todo
